@@ -26,7 +26,7 @@ class FlashServiceProvider extends ServiceProvider
     {
         $this->app->bind(
             'Bitgroupasia\Flash\SessionStore',
-            'Bitgroupasia\Flash\LaravelSessionStore',
+            'Bitgroupasia\Flash\LaravelSessionStore'
         );
         $this->app->singleton('flash', function () {
             return $this->app->make('Bitgroupasia\Flash\FlashNotifier');

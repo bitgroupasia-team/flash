@@ -1,3 +1,8 @@
+@if ($errors->any())
+    <div class="alert alert-danger">
+        @php echo implode('<br>', $errors->all());@endphp
+    </div>
+@endif
 @foreach (session('flash_notification', collect())->toArray() as $message)
     @if ($message['overlay'])
         @include('flash::modal', [
