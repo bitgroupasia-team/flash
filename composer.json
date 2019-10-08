@@ -13,7 +13,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Bitgroupasia\\Toastr\\": "src"
+            "Bitgroupasia\\Flash\\": "src"
         },
         "files": [
             "src/helpers.php"
@@ -27,7 +27,7 @@
                 "Bitgroupasia\\Flash\\FlashServiceProvider"
             ],
             "aliases": {
-                "Toastr": "Bitgroupasia\\Flash\\Facades\\Flash"
+                "Flash": "Bitgroupasia\\Flash\\Facades\\Flash"
             }
         }
     },
